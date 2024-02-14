@@ -7,4 +7,4 @@ b) nodemon index
 a) cd frontend
 b) npm start
 
-mrg.db bisa di import di mysql
+mrg.sql bisa di import di mysql
