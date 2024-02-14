@@ -1,0 +1,112 @@
+// Create a user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "endin",
+    "email": "officer11@gmail.com",
+    "password": "654321",
+    "confPassword": "654321",
+    "role": "Officer"
+}
+
+###
+// get All Users
+
+GET http://localhost:5000/users
+
+###
+// Get single User
+
+GET http://localhost:5000/users/db9b443f-dbbf-4837-858c-371eb75f7bcd
+
+###
+
+// Update a user
+PATCH http://localhost:5000/users/defcdf33-2c08-46a5-82cb-e1f11ed06008
+Content-Type: application/json
+
+{
+    "name": "Udin Updated",
+    "email": "manager@gmail.com",
+    "password": "654321",
+    "confPassword": "654321",
+    "role": "manager"
+}
+
+###
+
+// Delete a user
+DELETE  http://localhost:5000/users/db9b443f-dbbf-4837-858c-371eb75f7bcd
+
+
+###
+
+// Login User
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+   
+    "email": "Officer18@gmail.com",
+    "password": "654321"
+   
+}
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+   
+    "email": "manager18@gmail.com",
+    "password": "654321"
+   
+}
+
+###
+GET http://localhost:5000/me
+
+###
+
+DELETE http://localhost:5000/logout
+
+###
+//Get All products
+
+GET http://localhost:5000/products
+
+
+
+###
+//Get Single product
+
+GET http://localhost:5000/products/7f23a271-5256-49c3-9e1b-6744fffe32d9
+
+###
+// POST data Product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+   
+    "name": "komputer",
+    "amount": "2"
+   
+}
+
+
+###
+PATCH  http://localhost:5000/products/7f23a271-5256-49c3-9e1b-6744fffe32d9
+Content-Type: application/json
+
+{
+   
+    "name": "Laptop",
+    "amount": "2"
+   
+}
+
+###
+
+DELETE   http://localhost:5000/products/7f23a271-5256-49c3-9e1b-6744fffe32d9
