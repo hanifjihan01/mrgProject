@@ -10,7 +10,7 @@ const DashboardManager = () => {
   
 
   useEffect(() => {
-    // Memuat data pengajuan yang perlu di-approve
+   
     axios.get('http://localhost:5000/products')
       .then(response => {
         setPendingApprovals(response.data);
