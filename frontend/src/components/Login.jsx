@@ -9,7 +9,7 @@ import AddUser from "../pages/AddUser";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
+  const [showPassword, setShowPassword] = useState(false); 
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user, isError, isSuccess, isLoading, message } = useSelector(
@@ -68,7 +68,7 @@ const Login = () => {
                   <div className="control">
                     <input
                       id="password"
-                      type={showPassword ? "text" : "password"} // Toggle password visibility based on showPassword state
+                      type={showPassword ? "text" : "password"} 
                       className="input"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
@@ -81,7 +81,7 @@ const Login = () => {
                   <label className="checkbox">
                     <input
                       type="checkbox"
-                      onChange={togglePasswordVisibility} // Toggle the showPassword state
+                      onChange={togglePasswordVisibility} 
                     />
                     Show Password
                   </label>
